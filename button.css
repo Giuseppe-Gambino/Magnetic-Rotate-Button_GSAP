@@ -1,0 +1,94 @@
+body {
+  background-color: #2f8c9f;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+span {
+  padding: 0;
+  margin: 0;
+}
+
+.magBut {
+  padding: 0;
+  margin: 3rem;
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 9999px;
+  background-color: #242424;
+  border: none;
+  cursor: pointer;
+  font-family: "Agrandir", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.magBut::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  z-index: 0;
+  background-color: rgb(194, 194, 194);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.magBut:hover::after {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.center-text {
+  font-size: large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+#charCircle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transform: translate(0, -50%);
+}
+
+#charCircle span {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: -5%;
+  transform-origin: 0 70px;
+  transition: 50ms ease;
+}
+
+.magBut:hover #charCircle span {
+  opacity: 1;
+  position: absolute;
+  left: 50%;
+  top: -20%;
+
+  transform-origin: 0 90px; /* raggio */
+  transition: 250ms ease;
+}
+
+.magBut:active:after {
+  width: 90%;
+  height: 90%;
+  transition: 150ms ease;
+}
