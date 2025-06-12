@@ -8,7 +8,7 @@ Un pulsante animato in stile "magnetico", realizzato con HTML, CSS, JavaScript e
 
 ## 📸 Demo Live
 
-🔗 **CodePen:** [Guarda il bottone in azione su CodePen](https://codepen.io/tuo-username/pen/slug-del-bottone)  
+🔗 **CodePen:** [Guarda il bottone in azione su CodePen](https://codepen.io/Giuseppe-Gambino/pen/OPVQvpv)  
 📦 **Angular + Tailwind Version:** Disponibile in `.rar`
 
 ![Demo del pulsante](./preview/Button.gif)
